@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Portfolio</a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </label>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about" class="scroll-link" onclick="smoothScrollTo('about')">About</a>
+            <a href="#project" class="scroll-link" onclick="smoothScrollTo('project')">Project</a>
+            <a href="#contact" class="scroll-link" onclick="smoothScrollTo('contact')">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="main">
+            <div class="detail">
+                <h1><span>Hi, It's Me</span> <br><span style="color:#00E8F8;">Adarsha Chaulagain</span></h1>
+                <p> frontend web developer, designer, <br> motivated and enthusiastic learner. </p>
+                <div class="social">
+                    <a href="https://github.com/Adarsha777" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/adarsha_chaulagain/?next=%2F" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/adarsha-chaulagain-2600b5212/" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004305526936" target="_blank"><i
+                            class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="images">
+                <img src="photo.jpg" alt="" width="100%" style="border-radius: 50%;">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="about" id="about">
+        <h1>About me </h1>
+        <p>
+            Hi! I am Adarsha Chaulagain, an undergraduate IT student. Currently, I am enrolled into
+            Bachelor of Science in Computer Science and Information Technology program at Tribhuvan
+            University, Nepal.Besides my studies, I am actively involved
+            in Web Devlopment and Designing and usually spend my time improving these skills.
+        </p>
+        <div class="list">
+            <div class="edu">
+                <h3>My education</h3>
+                <p>Bsc.CSIT running at Tribhuvan University <br>
+                    +2 science from Xavier Int'l College</p>
+            </div>
+            <div class="exp">
+                <h3>My Experience</h3>
+                <p>Made some projects starting with making clone of different website. <br>
+                    active member in different renowned IT organization.</p>
+            </div>
+        </div>
+        <div class="list2">
+            <div>
+                <h3>Skils</h3>
+                <p>Front-End Development:HTML CSS JS <br>
+                    Design Tools: Figma, Canva <br>
+                    Version Control: Git, Github</p>
+            </div>
+            <div class="achiv">
+                <h3>Achievements</h3>
+                <p>created different projects, <br> organized events successfully , <br>
+                    also actively participated in different program.</p>
+            </div>
+        </div>
+        <div>
+            <p>I am also pretty good in designing.I have some expertise in creating logos,posters,
+                editing photos, and other related tasks.</p>
+        </div>
+    </section>
+    <hr>
+    <section class="project" id="project">
+        <h1>My projects</h1>
+        <div class="container">
+            <div class="container1">
+                <div class="Recipe">
+                    <button class="btn-body" onclick="redirectToRecipe()">
+                        Cocktail recipe
+                    </button>
+                </div>
+                <div class="clock">
+                    <button class="btn-body" onclick="redirectToClock()">
+                        Clock
+                    </button>
+                </div>
+                <div class="netflix" onclick="redirectToLogin()">
+                    <button class="btn-body">
+                        Login page
+                    </button>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="portfolio" onclick="redirectToPortfolio()">
+                    <button class="btn-body">
+                        Portfolio
+                    </button>
+                </div>
+                <div class="calculator" onclick="redirectToCalculator()">
+                    <button class="btn-body">
+                        Calculator
+                    </button>
+                </div>
+                <div class="note" onclick="redirectToNote()">
+                    <button class="btn-body">
+                        Note
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function redirectToRecipe() {
+                window.location.href = "https://adarshadrinkrecipe.netlify.app/";
+            }
+
+            function redirectToClock() {
+                window.location.href = "https://adarshaclock.netlify.app/";
+            }
+
+            function redirectToLogin() {
+                window.location.href = "https://adarshalogin.netlify.app/";
+            }
+
+            function redirectToPortfolio() {
+                window.location.href = "portfolio.html";
+            }
+
+            function redirectToCalculator() {
+                window.location.href = "https://adarshacalculator.netlify.app/";
+            }
+
+            function redirectToNote() {
+                window.location.href = "https://adarshanote.netlify.app/";
+            }
+        </script>
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+        <h1>Contact me</h1>
+        <div class="containerC">          
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004305526936" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/adarsha_chaulagain/?next=%2F" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/adarsha-chaulagain-2600b5212/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Adarsha777" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+            <div class="profile">
+                <!-- <a><img src="https://www.svgrepo.com/show/304548/call.svg" /> 9860491620</a>
+                <a> <img src="https://www.svgrepo.com/svg/533217/mail-open-alt-1" /> chaulagainaadarsha7@gmail.com </a>
+                <a><img src="https://www.svgrepo.com/show/129908/location.svg" /> Kathmandu, Nepal</a> -->
+                  <a><ion-icon name="call-outline"></ion-icon>9860491620</a>
+                  <a><ion-icon name="mail-outline"></ion-icon> chaulagainaadarsha7@gmail.com</a>
+                  <a><ion-icon name="location-outline"></ion-icon> Kathmandu, Nepal</a>
+            </div>
+        </div>
+
+            <div class="form">
+                <form action="https://formsubmit.co/abd412b68fc98d4acf64f168ed6c3abc" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <input type="submit" value="Send">                   
+                </form>
+            </div>
+    </section>
+    <hr>
+    <section class="sliderImg">
+        <h1>Image</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="imgSlider/img1.jpg" alt="Image 1">
+                <img src="imgSlider/img2.jpg" alt="Image 2">
+                <img src="imgSlider/img3.jpg" alt="Image 3">
+                <img src="imgSlider/img4.jpg" alt="Image 3">
+                <img src="imgSlider/img5.jpg" alt="Image 3">
+            </div>
+            <div class="slider-arrow prev" onclick="prevSlide()">&#10094;</div>
+            <div class="slider-arrow next" onclick="nextSlide()">&#10095;</div>
+        </div>
+    
+        <script>
+            const slider = document.querySelector(".slider");
+            const prevArrow = document.querySelector(".slider-arrow.prev");
+            const nextArrow = document.querySelector(".slider-arrow.next");
+            let currentIndex = 0;
+    
+            function prevSlide() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = slider.children.length - 1;
+                }
+                updateSlider();
+            }
+
+            function nextSlide() {
+                if (currentIndex < slider.children.length - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                updateSlider();
+            }
+    
+            function updateSlider() {
+                const offset = -currentIndex * 100;
+                slider.style.transform = `translateX(${offset}%)`;
+            }
+
+            function autoSlide() {
+            setInterval(() => {
+                nextSlide();
+            }, 4000); 
+        }
+    
+            // Show arrows on hover
+            document.querySelector(".slider-container").addEventListener("mouseenter", () => {
+                prevArrow.style.display = "block";
+                nextArrow.style.display = "block";
+            });
+    
+            // Hide arrows when not hovering
+            document.querySelector(".slider-container").addEventListener("mouseleave", () => {
+                prevArrow.style.display = "none";
+                nextArrow.style.display = "none";
+            });
+
+            updateSlider();
+            autoSlide();
+        </script>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+</style>
+
+</html>

@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine</title>
+    <style>
+        body{
+            padding: 8px;
+            height: 100px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black;
+        }
+        th,td{
+            padding: 5px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .day{
+            background-color:#ffe1cc;
+        }
+        .head{
+            background-color:#d8f1f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <table>
+        <tr class="head">
+            <th colspan="7">Texas International College</th>
+        </tr>
+        <tr class="head">
+            <th colspan="7">CSIT 5th sem</th>
+        </tr>
+        <tr class="day">
+            <th>Day/Time</th>
+            <th>06:30 - 07:30</th>
+            <th>07:30 - 08:30</th>
+            <th>08:30 - 09:30</th>
+            <th>09:30 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+        </tr>
+        <tr>
+            <td class="day">Sunday</td>
+            <td>SAD</td>
+            <td>WT</td>
+            <td>DAA</td>
+            <td rowspan="3" class="day">BREAK</td>
+            <td>Cryptography</td>
+            <td>S&M</td> 
+        </tr>
+        <tr>
+            <td class="day">Monday</td>
+            <td>Cryptography</td>
+            <td>WT</td>
+            <td>DAA</td>
+            <td>SAD</td>
+            <td>S&M</td>
+          </tr>
+          <tr>
+            <td class="day">Tuesday</td>
+            <td>Cryptography</td>
+            <td>WT</td>
+            <td>DAA</td>
+            <td>SAD</td>
+            <td>S&M</td>
+          </tr>
+          <tr>
+            <td class="day">Wednesday</td>
+            <td>Cryptography</td>
+            <td>WT</td>
+            <td rowspan="3" class="day"> BREAK (08:30 - 09:00)</td>
+            <td>Multimedia</td>
+            <td>SAD</td>
+            <td>S&M</td>
+          </tr>
+          <tr>
+            <td class="day">Thursday</td>
+            <td>Cryptography</td>
+            <td>WT</td>
+            <td>Multimedia</td>
+            <td>SAD</td>
+            <td>S&M</td>
+          </tr>
+          <tr>
+            <td class="day">Friday</td>
+            <td>SAD</td>
+            <td>WT</td>
+            <td>Multimedia</td>
+            <td>SAD</td>
+            <td>S&M</td>
+          </tr>
+    </table>
+</div>
+</body>
+</html>
